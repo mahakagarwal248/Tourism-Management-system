@@ -1,0 +1,363 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+		<title>tourism</title>
+		<link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+		<!--font awesome cdn link-->
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+			<!--custom css file link-->
+		<link rel="stylesheet" type="text/css" href="tour.css">
+	</head>
+	<body>
+	
+
+	<header>
+		<div id="menu-bar" class="fas fa-bars"></div>
+		<a href="#" class="logo"><span>T</span>ravel</a>
+		<nav class="navbar">
+			<a href="#home">home</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+			<a href="#review">review</a>
+			<a href="#contact">contact</a>
+		</nav>
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="login-btn"></i>
+		</div>
+		<form action="" class="search-bar-container">
+			<input type="search" id="search-bar" placeholder="search here....">
+			<label for="search-bar" class="fas fa-search"></label>
+		</form>
+	</header>
+	<br>
+	<br><br>
+	<br><br>
+	<br><br>
+	
+
+	<div class="login-form-container">
+
+
+		<i class="fas fa-times" id="form-close"></i>
+
+		<div id="register">
+			<form action="/register" method="POST">
+				<h3>Register</h3>
+				<input type="text" name="name" class="box" placeholder="Enter your name">		
+				<input type="email" name="email" class="box"placeholder="Enter your email">
+				<input type="phone" name="phone" class="box"placeholder="Enter your Number">
+				<input type="password" name="password" class="box" placeholder="Create password">
+				<input type="submit" value ="Submit" class="btn" >
+				<input type="checkbox" id="remember">
+				<label for="remember">remember me</label>
+		</form>
+		 </div>
+	   
+	    <form action="">
+	 			<h3>Login</h3>		
+	 			<input type="email" class="box"placeholder="Enter your email">
+	 			<input type="password" class="box" placeholder="Enter your password">
+	 	        <input type="submit" value ="login now" class="btn" >
+	 			<input type="checkbox" id="remember">
+	 			<label for="remember">remember me</label>
+	 			<p>forget password? <a href="#">Click here</a></p>
+	 	</form>
+		 
+		 
+	</div>
+	<!--home section starts-->
+	
+	<section class="home" id="home">
+		    
+
+		     <div class="content">
+		 	            <h3>Let's adventure</h3>
+		 	            <p style="color: white;">Hi hope u enjoyued it!!</p>
+		 	            <a href="#" class="btn">discover more</a>
+		     </div>
+		  
+		     <div class="controls">
+		 	         <span class="vid-btn active" data-src="gif.gif"></span>
+		 	         <span class="vid-btn active" data-src="img-2.jpg"></span>
+		 	         <span class="vid-btn active" data-src="img-1.jpg"></span>
+		 	         <span class="vid-btn active" data-src="img-1.jpg"></span>
+		 	         <span class="vid-btn active" data-src="img-1.jpg"></span>
+		     </div>
+
+		     <div class="video-container">
+		 	         <img src="gif.gif" id="video-slider" loop autoplay muted />
+		     </div>
+	</section>
+
+	<!-- home section ends-->
+
+	<!-- service section -->
+	<section class="services" id="services">
+		<div class="container" id="card">
+			<h1 class="heading">
+				<span>S</span>
+				<span>e</span>
+				<span>r</span>
+				<span>v</span>
+				<span>i</span>
+				<span>c</span>
+				<span>e</span>
+				<span>s</span>
+			</h1>
+			<div class="design" style="width: 18rem;height: 18rem;">
+				<img class="card-img-top border" src="package.jpg" style="height: 200px; width: 260px;">
+				<div class="card-body border">
+				  <a class="card-text" href="#">Package Booking</a>
+				</div>
+			</div>
+			<div class="design" style="width: 18rem; height: 18rem;">
+				<img class="card-img-top border" src="hotel.jpg" style="height: 200px; width: 260px;">
+				<div class="card-body border">
+				  <a class="card-text" href="#">Hotel Booking</a>
+				</div>
+			</div>
+			<div class="design" style="width: 18rem;">
+				<img class="card-img-top border" src="restro.jpg" style="height: 200px; width: 260px;">
+				<div class="card-body border">
+				  <a class="card-text" href="#">Restaurant Booking</a>
+				</div>
+			</div>
+			<div class="design" style="width: 18rem;">
+				<img class="card-img-top border" src="tour.jpg" style="height: 200px; width: 260px;">
+				<div class="card-body border">
+				  <a class="card-text" href="#">Tour Guide</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- service section ends -->
+
+
+	<!-- Gallery Section -->
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<h1 class="heading" style="margin-bottom: 50px;margin-top: 0px;">
+				<span>G</span>
+				<span>a</span>
+				<span>l</span>
+				<span>l</span>
+				<span>e</span>
+				<span>r</span>
+				<span>y</span>
+			</h1>
+			<div class="swiper-container brand-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="1.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="2.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="3.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="4.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="5.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="6.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="7.jpg"style="height: 220px;width: 220px;"></div>
+					<div class="swiper-slide"><img src="8.jpg"style="height: 220px;width: 220px;"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------------------------------------------------------------------------------------------------------------------------------>
+	<!-- review section starts-->
+	 <section class="review" id="review">
+	 	 <h1 class="heading">
+	 		<span>r</span>
+	 		<span>e</span>
+	 		<span>v</span>
+	 		<span>i</span>
+	 		<span>e</span>
+	 		<span>w</span>
+	 	</h1>	
+	 	<div class=" swiper-container review-slider">
+	 		<div class="swiper-wrapper">
+	 			<div class="swiper-slider">
+	 				<div class="box">
+	 					<img src="re1.jfif" alt="">
+	 					<h3>john deo</h3>
+	 					<p>Paragraphs are the group of sentences combined together, about a certain topic. It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc. We can say that a well-structured paragraph is the essence of good writing.  The purposes of the paragraph are to give information, to explain something, to tell a story, and to convince someone that our idea is right.</p>
+	 					<div class="stars">
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="far fa-star"></i>
+	 					</div>
+	 				</div>
+	 				
+	 			</div>
+	 			<div class="swiper-slider">
+	 				<div class="box">
+	 					<img src="re2.jfif" alt="">
+	 					<h3>john deo</h3>
+	 					<p>Paragraphs are the group of sentences combined together, about a certain topic. It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc. We can say that a well-structured paragraph is the essence of good writing.  The purposes of the paragraph are to give information, to explain something, to tell a story, and to convince someone that our idea is right.</p>
+	 					<div class="stars">
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="far fa-star"></i>
+	 					</div>
+	 				</div>
+	 				
+	 			</div>
+	 			<div class="swiper-slider">
+	 				<div class="box">
+	 					<img src="re3.jfif" alt="">
+	 					<h3>john deo</h3>
+	 					<p>Paragraphs are the group of sentences combined together, about a certain topic. It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc. We can say that a well-structured paragraph is the essence of good writing.  The purposes of the paragraph are to give information, to explain something, to tell a story, and to convince someone that our idea is right.</p>
+	 					<div class="stars">
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="far fa-star"></i>
+	 					</div>
+	 				</div>
+	 				
+	 			</div>
+	 			<div class="swiper-slider">
+	 				<div class="box">
+	 					<img src="re3.jfif" alt="">
+	 					<h3>john deo</h3>
+	 					<p>Paragraphs are the group of sentences combined together, about a certain topic. It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc. We can say that a well-structured paragraph is the essence of good writing.  The purposes of the paragraph are to give information, to explain something, to tell a story, and to convince someone that our idea is right.</p>
+	 					<div class="stars">
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="fas fa-star"></i>
+	 						<i class="far fa-star"></i>
+	 					</div>
+	 				</div>
+	 				
+	 			</div>
+	 		</div>
+	 	</div>
+	 </section>
+	<!-- review section ends-->
+	<!--------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<!--contact section starts-->
+	<section class="contact" id="contact">
+		
+	 <h1 class="heading">
+			<span>c</span>
+			<span>o</span>
+			<span>n</span>
+			<span>t</span>
+			<span>a</span>
+			<span>c</span>
+			<span>t</span>
+	 </h1>	
+
+	 <div class="row">
+	 	  <div class="image">
+	 	  	  <img src="contact.jpg" alt="">
+	 	  </div>
+
+	 	   <form action="">
+	 	   	<div class="inputBox">
+	 	   		<input type="text" placeholder="name">
+	 	   		<input type="email" placeholder="email">
+	 	   	</div>
+	 	   	<div class="inputBox">
+	 	   		<input type="number" placeholder="number">
+	 	   		<input type="text" placeholder="subject">
+	 	   	</div>
+	 	   	<textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+	 	   	<input type="submit" class="btn" value="send message">
+	 	   </form>
+
+	 </div>
+	</section>
+	<!-- contact section ends-->
+
+
+	<!--brand section starts-->
+  <section class="brand-container">
+  	<div class="swiper-container brand-slider">
+  		<div class="swiper-wrapper">
+  			<div class="swiper-slide"><img src="br1.svg"></div>
+  			<div class="swiper-slide"><img src="br2.jpg"></div>
+  			<div class="swiper-slide"><img src="br3.png"></div>
+  			<div class="swiper-slide"><img src="br4.png"></div>
+  			<div class="swiper-slide"><img src="br5.svg"></div>
+  			
+  		</div>
+  	</div>
+  </section>
+
+	<!--brand section ends-->
+		
+ 
+	<!-- footer section -->
+
+
+  <section class="footer">
+  	
+ 
+	<div class="box">
+
+  	<div class="footer-col">
+  		<h3>about us</h3>
+  		<p>We are your tour planner for Char Dham Trip. We assure you that we'll make your trip easy and fantastic!</p>
+  	</div>
+  			<div class="footer-col">
+  		<h3>branch locations</h3>
+  		<ul>
+  		<li><a href="#">DELHI</a></li>
+  		<li><a href="#">AGRA</a></li>
+  		<li><a href="#">LUCKNOW</a></li>
+  		<li><a href="#">GOA</a></li>
+  	</ul>
+  	</div>
+ 
+  	<div class="footer-col">
+  		<h3>quick links</h3>
+  		<ul>
+  		<li><a href="#">home</a></li>
+  		<li><a href="#">packages</a></li>
+  		<li><a href="#">services</a></li>
+  		<li><a href="#">gallery</a></li>
+  		<li><a href="#">review</a></li>
+  		<li><a href="#">contact</a></li>
+  	</ul>
+  	</div>
+ 
+  	<div class="footer-col">
+  		<h3>follow us</h3>
+  		<div class="social-links">
+  		<ul>
+  		<li><a href="#"><i class="fab fa-facebook-f"></i>facebook</a></li>
+  		<li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
+  		<li><a href="#"><i class="fab fa-instagram"></i>instagram</a></li>
+  		<li><a href="#"><i class="fab fa-linkedin-in"></i>linkedin</a></li>
+  	</ul>
+  </div>
+  	</div>
+  </div>
+
+
+  
+  	<h1 class="credit">created by <span><b>mr.web designer</b> </span>  | all rights reserved!</h1>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- js file link -->
+
+
+  	<script src="tour.js"></script>
+	  
+  </body>
+	</html>
+
